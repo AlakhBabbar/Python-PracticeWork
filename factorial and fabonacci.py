@@ -1,29 +1,29 @@
 print("welcome to fabonachi series and factorial series")
 input("please press enter to proceed")
-series = input("type \"a\" for fabonachi and \"b\" for factorial: ")
+series = input("type \"a\" for fibonacci and \"b\" for factorial: ")
 
-def fabonachi(num):
+def fibonacci(num):
     sum = 0
-    for i in range(num):
+    for i in range(num+1):
         sum = sum + i
         print(sum)
 
 
 def factorial(num):
-    sum = 1
-    for i in range(num):
+    product = 1
+    for i in range(num+1):
         if i == 0:
             print("1")
         else:
-            sum = sum* i
-            print(sum)
+            product = product* i
+            print(product)
 
 
-limit = int(input("please enter a number limit: "))
+limit = int(input("Please enter a number limit: "))
 
 if series=="a":
-    fabonachi(limit)
+    fibonacci(limit)
 elif series=="b":
     factorial(limit)
 else:
-    print("please type a valid value")
+    print("Please type a valid value")
